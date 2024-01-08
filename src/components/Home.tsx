@@ -10,9 +10,14 @@ const Home = (props: Props) => {
     <Row className='home'>
           <Col className='d-flex align-items-center justify-content-end'>
             <div>
-              <h5 className='light-blue slide-transition-1'>Hello World, I'm</h5>
-              <h2 className='slide-transition-2'>Cody Beumer</h2>
-              <p className='light-blue fade-in type-effect'>Full Stack Lead Software Developer</p>
+              <h2 className='light-blue slide-transition-1'>Hello World, I'm</h2>
+              <h1 className='slide-transition-2'>Cody Beumer</h1>
+                <div className='d-flex'>
+                    <div className='typing-container'>
+                        <p className='light-blue typing-text'>Full Stack Lead Software Developer</p>
+                    </div>
+                    <span className='typing-cursor'><strong>|</strong></span>
+                </div>
             </div>
           </Col>
           

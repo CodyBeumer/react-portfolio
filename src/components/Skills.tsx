@@ -30,14 +30,20 @@ const Skills = (props: Props) => {
                                 <li>Knockoutjs</li>
                                 <li>.NET</li>
                                 <li>Reactjs</li>
+                                <li>NUnit</li>
+                                <li>Jest</li>
                             </ul>
                         </Tab>
                         <Tab eventKey="tools" title="Tools">
                             <ul>
                                 <li>Visual Studio</li>
+                                <li>VS Code</li>
+                                <li>Git</li>
                                 <li>Sql Server Management Studio</li>
                                 <li>Azure DevOps</li>
                                 <li>Azure Portal</li>
+                                <li>Vercel</li>
+                                <li>Postman</li>
                             </ul>
                         </Tab>
                     </Tabs>

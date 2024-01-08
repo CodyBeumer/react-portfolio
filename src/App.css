@@ -1,5 +1,5 @@
 body {
-  background-color: gray;
+  background-color: E6E6E6;
 }
 
 .App {
@@ -97,25 +97,37 @@ img {
   }
 }
 
-.type-effect:after {
-  content: "|";
-  color: black;
-  display: inline-block;
-  margin-left: 2px;
-  animation: blink-animation 1s steps(5, start) infinite;
+@keyframes typing-animation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+@keyframes cursor-blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.type-effect{
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.typing-cursor {
+  animation: cursor-blink 1s infinite;
+}
+
+.typing-container {
+  overflow: hidden;
+  white-space: nowrap;
+  animation-name: typing-animation; 
+  animation-duration: 3s;
+  animation-timing-function: steps(34);
 }
 
 .home img {
